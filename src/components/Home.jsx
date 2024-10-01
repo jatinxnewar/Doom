@@ -26,8 +26,8 @@ export default function Home() {
 
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-r from-blue-400 to-purple-500">
-            <main className="flex-grow flex items-center justify-center p-4">
-                <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-4xl">
+            <main className="flex-grow flex items-center justify-center p-4 w-full">
+                <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-7xl">
                     <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
                         PEGASIS
                     </h1>
@@ -144,11 +144,12 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            <footer className="bg-gray-800 text-white py-4">
+            <footer className="bg-gray-800 text-white py-4 w-full">
                 <div className="container mx-auto px-4 text-center">
                     <p>
                         &copy; {new Date().getFullYear()} PEGASIS. All rights
-                        reserved.
+                        reserved.               
+                        Developed By JATIN NEWAR
                     </p>
                 </div>
             </footer>
