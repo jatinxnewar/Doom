@@ -9,6 +9,20 @@ import { Upload, Music, Brain, Users } from "lucide-react";
 
 export default function Home() {
     const [file, setFile] = useState(null);
+    const [song, setSong] = useState(null);
+
+    const songs = [
+        { title: "Song 1", url: "/songs/song1.mp3" },
+        { title: "Song 2", url: "/songs/song2.mp3" },
+        { title: "Song 3", url: "/songs/song3.mp3" },
+        { title: "Song 4", url: "/songs/song4.mp3" },
+        { title: "Song 5", url: "/songs/song5.mp3" },
+        { title: "Song 6", url: "/songs/song6.mp3" },
+        { title: "Song 7", url: "/songs/song7.mp3" },
+        { title: "Song 8", url: "/songs/song8.mp3" },
+        { title: "Song 9", url: "/songs/song9.mp3" },
+        { title: "Song 10", url: "/songs/song10.mp3" },
+    ];
 
     const handleFileChange = (e) => {
         if (e.target.files && e.target.files[0]) {
@@ -19,6 +33,8 @@ export default function Home() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (file) {
+            const randomSong = songs[Math.floor(Math.random() * songs.length)];
+            setSong(randomSong);
             console.log("Uploading file:", file.name);
             setFile(null);
         }
@@ -32,8 +48,7 @@ export default function Home() {
                         PEGASIS
                     </h1>
                     <p className="text-center text-gray-600 mb-8">
-                        AI-Powered Song Recommendations Based on Facial
-                        Expressions
+                        AI-Powered Song Recommendations Based on Facial Expressions
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-6 mb-12">
@@ -84,7 +99,19 @@ export default function Home() {
                         </Button>
                     </form>
 
-                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {song && (
+                        <div className="mt-6">
+                            <h2 className="text-2xl font-bold text-center mb-4">
+                                Now Playing: {song.title}
+                            </h2>
+                            <audio controls className="w-full">
+                                <source src={song.url} type="audio/mp3" />
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    )}
+
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
                         <Card>
                             <CardHeader>
                                 <CardTitle className="flex items-center">
@@ -148,7 +175,7 @@ export default function Home() {
                 <div className="container mx-auto px-4 text-center">
                     <p>
                         &copy; {new Date().getFullYear()} PEGASIS. All rights
-                        reserved.               
+                        reserved.                
                         Developed By JATIN NEWAR
                     </p>
                 </div>
