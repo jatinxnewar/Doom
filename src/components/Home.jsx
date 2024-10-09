@@ -12,15 +12,15 @@ export default function Home() {
     const [song, setSong] = useState(null);
 
     const songs = [
-        { title: "Song 1", url: "/songs/song1.mp3" },
-        { title: "Song 2", url: "/songs/song2.mp3" },
-        { title: "Song 3", url: "/songs/song3.mp3" },
-        { title: "Song 4", url: "/songs/song4.mp3" },
-        { title: "Song 5", url: "/songs/song5.mp3" },
-        { title: "Song 6", url: "/songs/song6.mp3" },
-        { title: "Song 7", url: "/songs/song7.mp3" },
-        { title: "Song 8", url: "/songs/song8.mp3" },
-        { title: "Song 9", url: "/songs/song9.mp3" },
+        { title: "Song 1", url: "https://soundcloud.com/yesspyro/spyro-boomtown-2024-promo-mix?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 2", url: "https://soundcloud.com/djgammer/gammer-live-midnight-mafia-2024-crazy-crowd-reaction?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 3", url: "https://soundcloud.com/dirtyworkzofficial/primeshock-firelite-feel-the-rhythm?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 4", url: "https://soundcloud.com/beat106scotland/bonkers-beats-140-on-beat-106-scotland-with-hixxy-010324?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 5", url: "https://soundcloud.com/yesspyro/spyro-boomtown-2024-promo-mix?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 6", url: "https://soundcloud.com/djgammer/gammer-live-midnight-mafia-2024-crazy-crowd-reaction?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 7", url: "https://soundcloud.com/beat106scotland/bonkers-beats-140-on-beat-106-scotland-with-hixxy-010324?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 8", url: "https://soundcloud.com/beat106scotland/bonkers-beats-140-on-beat-106-scotland-with-hixxy-010324?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+        { title: "Song 9", url: "https://soundcloud.com/yesspyro/spyro-boomtown-2024-promo-mix?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
         { title: "Song 10", url: "/songs/song10.mp3" },
     ];
 
