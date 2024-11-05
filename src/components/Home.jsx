@@ -73,7 +73,7 @@ export default function Home() {
                                     onClick={() =>
                                         document.getElementById("image").click()
                                     }
-                                    className="w-full"
+                                    className="w-full transform transition-transform duration-200 hover:-translate-y-1 shadow-lg hover:shadow-xl active:translate-y-0 active:shadow-md bg-white border-2 border-gray-200 rounded-lg"
                                 >
                                     <Upload className="mr-2 h-4 w-4" />
                                     {file ? file.name : "Choose file"}
